@@ -1,88 +1,103 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="../static/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans+SC:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
 
   <title>Home</title>
 </head>
+
 <body>
 
   <div class="barra">
-    <a href="https://www.instagram.com/brenoxs01/" target="_blank"><img src="../static/instagram.png" alt="instagram"></a>
+    <a href="https://www.instagram.com/brenoxs01/" target="_blank"><img src="../static/instagram.png"
+        alt="instagram"></a>
     <a href="https://github.com/brenolx/" target="_blank"><img src="../static/github.png" alt="git-hub"></a>
-    <a href="https://www.linkedin.com/in/breno-cavalcante-182a5a26b/" target="_blank"><img class="teste" src="../static/linkedin.png" alt="linkedin"></a>
+    <a href="https://www.linkedin.com/in/breno-cavalcante-182a5a26b/" target="_blank"><img class="teste"
+        src="../static/linkedin.png" alt="linkedin"></a>
 
   </div>
 
   <header>
-    <div class="meu-nome"><h1>Breno Cavalcante</h1></div> 
-    
+    <div class="nome">
+      <h1>Breno Cavalcante</h1>
+      <p>CyberSegurança e TI</p>
+    </div>
+
     <nav>
       <section>
-        <a href="#home">Serviços</a>
         <a href="#projetos">Projetos</a>
+        <a href="#servicos">Serviços</a>
         <a href="#contato">Contato</a>
       </section>
-      
+
     </nav>
   </header>
 
   <main>
-    <section id="servicos">
-      <h2>CyberSegurança e TI</h2>
-      <p>Aqui você encontra meus projetos e trabalhos na área de segurança e infraestrutura.</p>
-    </section>
-    
+
     <section id="projetos">
       <h2>Projetos</h2>
-      <p>Aqui você encontra meus projetos e trabalhos na área de segurança e infraestrutura.</p>
+      <p>Aqui você encontra meus projetos em breve...</p>
     </section>
 
+    <section id="servicos">
+      <h2>Serviços</h2>
+      <p>Alguns serviços que você pode soliciatar. Entre em contato <a href="#contate-me">aqui</a></p>
+    </section>
+
+    
+
+
     <section class="contato" id="contato">
-      
-      <div class="mapa-section">
-        <h2>Mapa do site</h2>
-        <ul>
+
+      <div class="sobre-section">
+          <h2>Sobre</h2>
+
+          <p>Olá! Sou Breno Cavalcante, acadêmico de Analise e Desenvolvimento de Sistemas e entusiasta em cibersegurança, estou sempre aprendendo novas tecnologias e buscando  soluções tecnológicas para facilitar o dia a dia de empresas e pessoas. <a href="sobre.html">Saiba Mais</a></p>
+        </div>
+
+        <div class="mapa-section">
+          <h2>Mapa do site</h2>
+          <ul>
             <li><a href="../templates/home.html">Início</a></li>
             <li><a href="#projetos">Projetos</a></li>
             <li><a href="#servicos">Serviços</a></li>
-       </ul>
-      </div>
+            <li><a href="https://drive.google.com/file/d/1DnsCpUvuFZHiEBwSyq4ZBU-7flP_t2Sn/view?usp=sharing"
+                target="_blank">Curriculo</a></li>
+          </ul>
+        </div>
 
-      <div class="c-section">
-        <h2>Curriculum</h2>
-        <ul>
-            <li><a href="/">Baixar Curriculum</a></li>
-        
-       </ul>
-      </div>
-      
+      <div class="form-section" id="contate-me">
+        <h2 class="titulo-form">Contate-me</h2>
 
-      <div class="form-section">
-        <h2>Contate-me</h2>
         <form action="submit.php" method="post" class="form-contato">
-            
-        <label for="nome"></label>
-        <input type="text" placeholder="Nome" name="nome" id="nome" required />
 
-        <label for="email"></label>
-        <input type="email" placeholder="Telefone" name="Telefone" id="Telefone" required />
+          <label for="nome"></label>
+          <input type="text" placeholder="Nome *" name="nome" id="nome" required />
 
-        <label for="assunto"></label>
-        <input type="text" placeholder="Assunto" name="assunto" id="assunto">
+          <label for="email"></label>
+          <input type="email" placeholder="Telefone *" name="Telefone" id="Telefone" required />
 
-        <label for="mensagem"></label>
-        <textarea placeholder="Digite sua mensagem..."></textarea>
+          <label for="assunto"></label>
+          <input type="text" placeholder="Assunto *" name="assunto" id="assunto">
 
-        <button type="submit">ENVIAR EMAIL</button>
-         
-      </form>
-      </div> 
+          <label for="mensagem"></label>
+          <textarea placeholder="Digite sua mensagem ..."></textarea>
+
+          <button type="submit">ENVIAR EMAIL</button>
+
+        </form>
+      </div>
+
+
+
     </section>
   </main>
 
@@ -94,4 +109,5 @@
     <p>© 2025 Breno Cavalcante</p>
   </footer>
 </body>
+
 </html>
